@@ -12,7 +12,7 @@
 (deftest test-table-operations
   (with-connector db
 
-    (is (table? "!METADATA"))
+    (is (table? "accumulo.metadata"))
     (is (not (table? "non-existent")))
 
     (create-table "new_table")
